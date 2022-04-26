@@ -28,7 +28,7 @@ namespace IT_Sprendimai.Data
             StoreUser user = await _userManager.FindByEmailAsync("mbartkus.it@gmail.com");
             if (user == null)
             {
-                user = new StoreUser() { FirstName = "Marius", LastName = "admin", Email = "mbartkus.it@gmail.com", UserName = "mbartkus.it@gmail.com" };
+                user = new StoreUser() { FirstName = "Marius", LastName = "admin", Email = "myMailt@gmail.com", UserName = "myMail.it@gmail.com" };
                 var result = await _userManager.CreateAsync(user, "slaptazodis");
                 if (result != IdentityResult.Success)
                 {
