@@ -1,0 +1,29 @@
+﻿{
+  "Colors": {
+    "Favorite": "Blue"
+  },
+
+  "ConnectionStrings": {
+    "IT_ContextDB": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=IT_SolutionsDB;Integrated Security=True;Connect Timeout=30;multipleactiveresultsets=true"
+
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+
+  "Tokens": {
+    "Key": "a;lkjasdf;lkajsd;flkjas ;dflkja sd",
+    "Issuer": "http://localhost:25400",
+    "Audience": "http://localhost:25400"
+  }
+    
+
+
+
+  
+
+
+
+}

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>IT Sprendimai</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+   
+   
+
+</head>
+
+
+<body>
+    <div id="intro">
+        <img src="img/it_supp.jpg" />
+        <h3>Request tracking system</h3>
+        <ul class="activities-list">
+            <li>Request tracking </li>
+            <li>Ticket resolutions</li>
+            <li>Summary</li>
+        </ul>
+       
+    </div>
+    <button id="moreInfoBtn">More information</button>
+    <br />
+    <br />
+
+    <div class="login">
+        <p><strong>User Panel</strong></p>
+        <form>
+            <label>User:</label>
+            <br />
+            <input />
+            <br />
+            <label> Password:</label>
+            <br />
+            <input type="password" />
+            <br />
+            <input type="submit" value="Login" />
+        </form>
+        <br />
+    </div>
+
+    <div>
+        <div id="loginToggle">Login</div>
+        <form class="popupForm">
+            <div>
+                <label>Username</label><input />
+            </div>
+            <div>
+                <label>Password</label><input type="password" />
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>Remember me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Login" />
+
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <div id="ticketSubmition">
+
+        <p><strong>Request Submition</strong></p>
+        <form>
+            <label>Email:  </label>
+            <br />
+            <input type="email" />
+            <br />
+            <label>Subject: </label>
+            <br />
+            <input />
+            <br />
+            <label>Name:  </label>
+            <br />
+            <input />
+            <br />
+            <label>Issues you are facing: </label>
+            <br />
+            <textarea rows="5"></textarea>
+            <br />
+            <input type="submit" value="Submit ticket" />
+
+        </form>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

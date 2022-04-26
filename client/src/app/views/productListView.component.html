@@ -1,0 +1,16 @@
+﻿
+<div class=row>
+    <div *ngFor="let p of store.products" class="col-md-4">
+        
+            <div class="border bg-light rounded p-1">
+                <h3>{{p.title}} </h3>
+                <ul class="products-props">
+                    <li>Price: {{p.price | currency:"EUR"}}</li>
+                    <li>Category: {{p.category}}</li>
+                    <li>Description: {{p.description}}</li>
+                </ul>
+                <button class="btn btn-success" id="moreInfoBtn">More information</button>
+                <button class="btn btn-success" (click)="store.addToOrder(p)" id="Buy">Buy</button>
+            </div>
+    </div>
+</div>

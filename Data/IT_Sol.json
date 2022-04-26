@@ -1,0 +1,63 @@
+[
+
+  {
+    "Id":0,
+    "Category": "IT General Consulting",
+    "Price": 150,
+    "Title": "General questions",
+    "Description": "Self-portrait"
+  },
+
+{"Id":0,
+"Category":"IT General Consulting",
+"Price":250,
+"Title":"High priority questions",
+"Description":"general question answering"
+},
+
+
+{"Id":0,
+"Category":"Server Infrastructure",
+"Price":5000,
+"Title":"VMware Backuping & Replication Solution",
+"Description":"Analysis of current infrastructure and solution to backup all the required endpoints usng VMware"
+},
+
+{"Id":0,
+"Category":"Server Infrastructure",
+"Price":5000,
+"Title":"VEEAM Backuping & Replication Solution",
+"Description":"Analysis of current infrastructure and solution to backup all the required endpoints usng Veeam"
+},
+
+
+
+{"Id":0,
+"Category":"Infrastructure Migrations",
+"Price":2000,
+"Title":"Mail Server Migrations",
+"Description":"Migration from GSuite to Exchange or any other provider and vice versa."
+},
+
+{"Id":0,
+"Category":"Infrastructure Migrations",
+"Price":4000,
+"Title":"Physical Servers to Hyper-V",
+"Description":"The process involves both the required analysis and the actual migration of physical services to virtual Hyper-V Clusters with HP 3PAR storing devices"
+},
+
+{"Id":0,
+"Category":"Support Service",
+"Price":1800,
+"Title":"HelpDesk System SetUp",
+"Description":"Full set up of HelpDesk system including installing."
+},
+
+{"Id":0,
+"Category":"IT Business Solutions",
+"Price":480,
+"Title":"HelpDesk Analysis",
+"Description":"Analysis for the nescessity of help desk service."
+}
+
+]

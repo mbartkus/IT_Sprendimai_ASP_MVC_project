@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>IT Solutions: ViewBag.Title</title>
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/lib/fortawesome/css/all.css" rel="stylesheet" />
+        <link href="~/css/styles.css" rel="stylesheet" />
+    @RenderSection("head", false) @*//false for it not to be required*@
+</head>
+<body>
+    <header class="container">
+        @* THE Collapsed nav container doesnt seem to work, needs fixing*@
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <h1 class="navbar-brand"> IT Solutions | IT Sprendimai</h1>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#PagrMenu" aria-expanded="false" )>
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div id="PagrMenu" class="navbar-collapse collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Index">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="text-center">@ViewBag.Title</h2>
+        <br />
+        @RenderBody()
+
+    </section>
+
+    <footer class="container"><br /><div class="text-center">Copyright 2021</div></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery">
+
+    </script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/index.js"></script>
+
+    @RenderSection("Skriptai", false);
+
+
+</body>
+</html>

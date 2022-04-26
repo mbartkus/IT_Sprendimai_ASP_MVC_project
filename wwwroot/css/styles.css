@@ -1,0 +1,51 @@
+﻿
+/*
+body { font-family: 'Segoe UI', Tahomal;
+}
+
+
+
+input, textarea{
+
+    width: 200px;
+
+}
+
+div#login_div {background-color: red}
+
+#login_div input[type=submit] {
+   background-color: yellow;
+}
+
+.login {
+    border: 3px solid grey;
+    display: inline-block;
+}
+
+#loginToggle{
+cursor: pointer;
+}
+
+.popupForm {
+    Padding: 5px;
+    Border: 2px black outset;
+    Display: inline-block;
+  }
+
+.popupForm input {
+        Width: 200px;
+       
+  }
+
+.popupForm label {
+    Width: 150px;
+    Display: inline-block;
+}
+
+
+.popupForm input[type=checkbox], .popupForm input[type=submit]{
+    width: auto;
+
+}
+
+    */

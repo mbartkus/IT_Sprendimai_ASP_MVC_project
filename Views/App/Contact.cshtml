@@ -1,0 +1,53 @@
+﻿@model ContactViewModel
+@{
+    ViewBag.Title = "Contact";}
+@*
+
+    @Html.ValidationMessageFor(m => m.Name)
+
+
+     <div asp-validation-summary="modelOnly"></div>
+*@
+
+
+<div class="col-md-6 offset-md-3">
+    <div class="card card-body bg-light">
+        <div id="ticketSubmition">
+            <p><strong>Contact us for additional information</strong></p>
+            <!-- -->
+            <form method="post"  class="form-group">
+                @*neveikia form validation, sutvarkyti, panasu kad is controllerio*@
+                <div asp-validation-summary="ModelOnly"></div>
+                <label asp-for="Email">Email: </label>
+               
+                <input class="form-control" type="email" asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+                
+                <label asp-for="Subject">Subject: </label>
+               
+                <input class="form-control" type="text" asp-for="Subject" />
+                <span asp-validation-for="Subject"></span>
+                
+                <label asp-for="Name">Name: </label>
+          
+                <input class="form-control" asp-for="Name" />
+                <span asp-validation-for="Name"></span>
+                
+                <label asp-for="Message">Text message: </label>
+        <br />
+                <textarea class="w-100" rows="5" asp-for="Message"></textarea>
+                <span asp-validation-for="Name"></span>
+          
+                <input class="btn btn-primary" type="submit" value="Submit" />
+                <div>@ViewBag.UserMessage</div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Skriptai{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+
+}
